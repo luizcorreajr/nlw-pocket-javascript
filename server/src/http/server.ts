@@ -1,5 +1,6 @@
 import fastify from 'fastify'
 import { createGoal } from '../functions/create-goal'
+import { serializerCompiler, validatorCompiler, ZodTypeProvider } from 'fastify-type-provider-zod'
 import z from 'zod'
 
 const app = fastify()
